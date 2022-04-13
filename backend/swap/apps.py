@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class NamesConfig(AppConfig):
+class SwapConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'backend.names'
+    name = 'swap'
