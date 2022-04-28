@@ -3,13 +3,15 @@ import AppFooter from './modules/views/AppFooter';
 import Description from './modules/views/Description';
 import AppAppBar from './modules/views/AppAppBar';
 import withRoot from './modules/withRoot';
+import Option from '../Option';
 
 function Index() {
   return (
     <React.Fragment>
       <AppAppBar />
-      <Description />
-      <AppFooter />
+      <Option />
+      {/* <Description />
+      <AppFooter /> */}
     </React.Fragment>
   );
 }

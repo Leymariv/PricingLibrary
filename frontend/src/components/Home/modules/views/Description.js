@@ -33,19 +33,6 @@ export default function ProductHero() {
       >
         Welcome to the project hub of La Squad Du Kiff. Enjoy your visit :)
       </Typography>
-      <Button
-        color="secondary"
-        variant="contained"
-        size="large"
-        component="a"
-        href="https://www.instagram.com/"
-        sx={{ minWidth: 200 }}
-      >
-        Check our Instagram
-      </Button>
-      <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Discover the experience
-      </Typography>
     </Layout>
   );
 }
