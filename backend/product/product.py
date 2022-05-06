@@ -15,22 +15,22 @@ class Product():
 
 
 class Bond(Product):
-    def __init__(self, coupon_rate, discount_rate, maturity_date, face_value, n_periods):
+    def __init__(self, coupon_rate, discount_rate, maturity_date, face_value, coupon_period):
         """
         C: coupon_rate
         F: face_value
-        t: n_periods
+        t: coupon_period
         T: maturity_date
         """
         self.coupon_rate = coupon_rate
         self.discount_rate = discount_rate
         self.maturity_date = maturity_date
         self.face_value = face_value
-        self.n_periods = n_periods
+        self.coupon_period = coupon_period
 
     def value_coupons(self):
         coupon_payment = self.coupon_rate * self.face_value
-        value = sum(self.actualize(coupon_payment, self.discount_rate, self.n_periods) for i in range(self.maturity_date * self.n_periods))            
+        value = sum(self.actualize(coupon_payment, self.discount_rate, self.coupon_period) for i in range(self.maturity_date * self.coupon_period))            
         return value 
         
     def v_face_value(self):
@@ -38,7 +38,7 @@ class Bond(Product):
 
 class Swap(Product):
     pass
-
+ 
 
 class Option(Product):
     
